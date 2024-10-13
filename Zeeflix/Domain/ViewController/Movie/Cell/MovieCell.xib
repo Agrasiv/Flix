@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="119" id="Vfn-p6-P9b" customClass="MovieCell" customModule="Zeeflix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vfn-p6-P9b" id="htq-XR-f2b">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="move.3d" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qec-b5-dHj">
+                        <rect key="frame" x="16" y="15" width="95" height="88.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qec-b5-dHj" secondAttribute="height" multiplier="95:91" id="bvU-MW-YIu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHo-7A-s5k">
+                        <rect key="frame" x="127" y="49" width="234" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kof-ZX-ugY">
+                        <rect key="frame" x="377" y="48" width="21" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="QOj-J6-3nx"/>
+                            <constraint firstAttribute="width" constant="21" id="fP0-mj-Yne"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <state key="normal" image="heart"/>
+                        <connections>
+                            <action selector="clickFav:" destination="Vfn-p6-P9b" eventType="touchUpInside" id="8ss-aA-aBK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cHo-7A-s5k" firstAttribute="leading" secondItem="qec-b5-dHj" secondAttribute="trailing" constant="16" id="1my-hk-l7p"/>
+                    <constraint firstItem="qec-b5-dHj" firstAttribute="leading" secondItem="htq-XR-f2b" secondAttribute="leading" constant="16" id="89O-ZC-Xud"/>
+                    <constraint firstAttribute="bottom" secondItem="qec-b5-dHj" secondAttribute="bottom" constant="14" id="KtI-WI-hK0"/>
+                    <constraint firstItem="qec-b5-dHj" firstAttribute="top" secondItem="htq-XR-f2b" secondAttribute="top" constant="14" id="UeE-tr-xA6"/>
+                    <constraint firstItem="kof-ZX-ugY" firstAttribute="top" secondItem="htq-XR-f2b" secondAttribute="top" constant="48" id="dqx-M1-XMj"/>
+                    <constraint firstAttribute="bottom" secondItem="kof-ZX-ugY" secondAttribute="bottom" constant="49" id="kFy-Ff-XIA"/>
+                    <constraint firstAttribute="trailing" secondItem="kof-ZX-ugY" secondAttribute="trailing" constant="16" id="l2a-EC-A3M"/>
+                    <constraint firstItem="cHo-7A-s5k" firstAttribute="top" secondItem="htq-XR-f2b" secondAttribute="top" constant="49" id="p4I-pe-uDX"/>
+                    <constraint firstItem="kof-ZX-ugY" firstAttribute="leading" secondItem="cHo-7A-s5k" secondAttribute="trailing" constant="16" id="yXo-Be-dEQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="favBtn" destination="kof-ZX-ugY" id="FC1-xT-Rfh"/>
+                <outlet property="imgMovie" destination="qec-b5-dHj" id="GpA-mm-ZoF"/>
+                <outlet property="lbName" destination="cHo-7A-s5k" id="Zu8-UX-0gT"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" width="26" height="26"/>
+        <image name="move.3d" catalog="system" width="128" height="106"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

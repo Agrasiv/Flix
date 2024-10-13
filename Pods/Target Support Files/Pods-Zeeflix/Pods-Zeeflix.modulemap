@@ -1,0 +1,6 @@
+framework module Pods_Zeeflix {
+  umbrella header "Pods-Zeeflix-umbrella.h"
+
+  export *
+  module * { export * }
+}

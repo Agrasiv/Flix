@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail-->
+        <scene sceneID="f3s-JL-hMQ">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetail" id="5fn-0D-stT" customClass="MovieDetail" customModule="Zeeflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9va-W1-Vsl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7h-cP-2ES">
+                                <rect key="frame" x="0.0" y="48" width="414" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V7h-cP-2ES" secondAttribute="height" multiplier="15:8" id="q8e-wJ-umU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-Qv-xd4">
+                                <rect key="frame" x="16" y="284" width="66.5" height="43.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-Js-DXp">
+                                <rect key="frame" x="16" y="337.5" width="382" height="54"/>
+                                <string key="text">A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aU-CR-GgG">
+                                <rect key="frame" x="16" y="401.5" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-d8-GND">
+                                <rect key="frame" x="363" y="294" width="21" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="J1z-VA-iHa"/>
+                                    <constraint firstAttribute="width" constant="21" id="ZyH-te-rTR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" image="heart"/>
+                                <connections>
+                                    <action selector="tappedFAv:" destination="5fn-0D-stT" eventType="touchUpInside" id="ldr-k9-DdJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rm7-zp-Gdd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sh1-Qv-xd4" firstAttribute="top" secondItem="V7h-cP-2ES" secondAttribute="bottom" constant="15" id="2Pf-YR-dzG"/>
+                            <constraint firstItem="wcf-Js-DXp" firstAttribute="leading" secondItem="rm7-zp-Gdd" secondAttribute="leading" constant="16" id="5ia-OG-IjL"/>
+                            <constraint firstItem="wcf-Js-DXp" firstAttribute="top" secondItem="Sh1-Qv-xd4" secondAttribute="bottom" constant="10" id="7da-sg-fjY"/>
+                            <constraint firstItem="rm7-zp-Gdd" firstAttribute="trailing" secondItem="ixo-d8-GND" secondAttribute="trailing" constant="30" id="8km-ef-Oz5"/>
+                            <constraint firstItem="rm7-zp-Gdd" firstAttribute="trailing" secondItem="5aU-CR-GgG" secondAttribute="trailing" constant="16" id="AB5-PK-BV8"/>
+                            <constraint firstItem="rm7-zp-Gdd" firstAttribute="trailing" secondItem="wcf-Js-DXp" secondAttribute="trailing" constant="16" id="CuF-aT-jiG"/>
+                            <constraint firstItem="V7h-cP-2ES" firstAttribute="leading" secondItem="rm7-zp-Gdd" secondAttribute="leading" id="Gzd-dP-VsZ"/>
+                            <constraint firstItem="V7h-cP-2ES" firstAttribute="top" secondItem="rm7-zp-Gdd" secondAttribute="top" id="X9t-zp-GWK"/>
+                            <constraint firstItem="5aU-CR-GgG" firstAttribute="top" secondItem="wcf-Js-DXp" secondAttribute="bottom" constant="10" id="ZA0-8o-DWY"/>
+                            <constraint firstItem="rm7-zp-Gdd" firstAttribute="trailing" secondItem="V7h-cP-2ES" secondAttribute="trailing" id="eDf-if-21p"/>
+                            <constraint firstItem="ixo-d8-GND" firstAttribute="top" secondItem="V7h-cP-2ES" secondAttribute="bottom" constant="25" id="tun-k5-LiU"/>
+                            <constraint firstItem="Sh1-Qv-xd4" firstAttribute="leading" secondItem="rm7-zp-Gdd" secondAttribute="leading" constant="16" id="vmC-lx-WKW"/>
+                            <constraint firstItem="5aU-CR-GgG" firstAttribute="leading" secondItem="rm7-zp-Gdd" secondAttribute="leading" constant="16" id="yUB-XP-A52"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favBtn" destination="ixo-d8-GND" id="3Os-sL-tEN"/>
+                        <outlet property="imgMovie" destination="V7h-cP-2ES" id="orc-Qb-x09"/>
+                        <outlet property="lbDate" destination="5aU-CR-GgG" id="Niw-nk-sOU"/>
+                        <outlet property="lbName" destination="Sh1-Qv-xd4" id="z5I-Nh-Q1g"/>
+                        <outlet property="lbOverView" destination="wcf-Js-DXp" id="CRX-O2-djr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdm-do-Dr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - ANActivityIndicator (1.2.0)
+  - atlantis-proxyman (1.25.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - Kingfisher (5.15.6):
+    - Kingfisher/Core (= 5.15.6)
+  - Kingfisher/Core (5.15.6)
+  - ObjectMapper (3.5.3)
+  - ReachabilitySwift (5.2.4)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.2)
+  - ANActivityIndicator
+  - atlantis-proxyman
+  - FMDB
+  - Kingfisher
+  - ReachabilitySwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - ANActivityIndicator
+    - atlantis-proxyman
+    - FMDB
+    - Kingfisher
+    - ObjectMapper
+    - ReachabilitySwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  ANActivityIndicator: 44a996931d0c554cf157b31056603b23bbdbe76a
+  atlantis-proxyman: 142e1365bb51277f5c0ad596a796bcd933889a61
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Kingfisher: b3554e7bf6106115b44e8795300bad580ef2fdc7
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: f77e43f4b2511e4f4010ed1d5eea1561ec6441a7
+
+COCOAPODS: 1.15.2
